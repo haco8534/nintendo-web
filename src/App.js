@@ -1,10 +1,10 @@
 import './App.css';
-import CartButton from './component/cart.button';
+import Header from './component/header';
 
 function App() {
   return (
-    <div className="App">
-      <CartButton></CartButton>
+    <div className = "App">
+      <Header></Header>
     </div>
   );
 }

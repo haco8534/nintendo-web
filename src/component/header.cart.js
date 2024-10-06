@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { MdOutlineShoppingCart } from "react-icons/md";
-import style from '../styles/cart.button.module.css';
+import style from '../styles/header.cart.module.css';
 
-const CartButton = () => {
+const HeaderCart = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
             <div> 
@@ -14,4 +14,4 @@ const CartButton = () => {
     );
 }
 
-export default CartButton;
+export default HeaderCart;

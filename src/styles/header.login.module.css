@@ -1,0 +1,13 @@
+.login:hover{
+    color: brown;
+    transition: 0s;
+}
+
+.login{
+    color: grey;
+    transition: 0.5s;
+}
+
+.font{
+    font-size: 15px;
+}
