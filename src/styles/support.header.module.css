@@ -1,17 +1,16 @@
-.topics:hover{
-    color: brown;
-    transition: 0s;
-}
-
-.topics{
+.Support {
     color: grey;
-    transition: 0.5s;
+    transition:  0.5s;
     display: flex;
     align-items: center;
 }
 
-.font{
+.font {
     font-size: 15px;
     padding-left: 10px;
 }
 
+.Support:hover {
+    color: brown;
+    transition: 0s;
+}

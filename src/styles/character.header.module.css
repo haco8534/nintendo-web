@@ -1,17 +1,16 @@
-.topics:hover{
-    color: brown;
-    transition: 0s;
-}
-
-.topics{
+.Character {
     color: grey;
-    transition: 0.5s;
+    transition: color 0.5s ease;
     display: flex;
     align-items: center;
 }
 
-.font{
+.font {
     font-size: 15px;
     padding-left: 10px;
 }
 
+.Character:hover {
+    color: brown;
+    transition: 0s;
+}
