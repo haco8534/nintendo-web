@@ -1,0 +1,24 @@
+.flex {
+    display: flex;
+    padding: 10px;
+}
+
+.flex div{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex.Support {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.flex.font {
+    font-size: 20px
+}
+
+.Support:hover {
+    color: #dc143c;
+}
+

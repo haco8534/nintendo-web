@@ -1,17 +1,17 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
-import { MdOutlineShoppingCart } from "react-icons/md";
-import style from "../styles/cart.button.module.css";
+import { AiFillAliwangwang } from "react-icons/ai";
+import style from "../styles/character.header.module.css";
 
-const Cart = () => {
+const Character = () => {
     return(
         <IconContext.Provider value = {{size: '80px'}}>
-        <div className = {style.Cart}>
-            <MdOutlineShoppingCart/>
-            <div className = {style.font}>ストア</div>
+        <div className = {style.Character}>
+            <AiFillAliwangwang/>
+            <div className = {style.font}>キャラクター</div>
         </div>
         </IconContext.Provider>
     );
 };
 
-export default Cart;
+export default Character;
