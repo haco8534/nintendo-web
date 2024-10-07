@@ -6,10 +6,10 @@ import style from '../styles/header.login.module.css';
 const HeaderLogin = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <div className = {style.login}>
+            <a className = {style.login}>
                 <MdPerson/>
                 <div className = {style.font}>ログイン</div>   
-            </div>
+            </a>
         </IconContext.Provider>
     );
 }

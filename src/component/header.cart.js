@@ -6,10 +6,10 @@ import style from '../styles/header.cart.module.css';
 const HeaderCart = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <div className = {style.cart}> 
+            <a className = {style.cart}> 
                 <MdOutlineShoppingCart/>
                 <div className = {style.font}>ストア</div>   
-            </div>
+            </a>
         </IconContext.Provider>
     );
 }

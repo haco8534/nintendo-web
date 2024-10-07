@@ -1,0 +1,14 @@
+.topics:hover{
+    color: brown;
+    transition: 0s;
+}
+
+.topics{
+    color: grey;
+    transition: 0.5s;
+}
+
+.font{
+    font-size: 15px;
+}
+

@@ -1,14 +1,22 @@
 import HeaderSearch from "./header.search.js";
 import HeaderCart from "./header.cart.js";
 import HeaderLogin from "./header.login.js";
-import style from "../styles/header.module.css"
+import style from "../styles/header.module.css";
+import HeaderHontai from "./header.hontai.js";
+import HeaderGamesoft from "./header.gamesoft.js"
+import HeaderTopics from "./header.topics.js"
 
 const Header = () => {
     return (
-        <div className = {style.header}>
-            <HeaderSearch></HeaderSearch> 
-            <HeaderCart></HeaderCart>
-            <HeaderLogin></HeaderLogin>                
+        <div className = {style.headerLeft}>
+            <HeaderHontai></HeaderHontai>
+            <HeaderGamesoft></HeaderGamesoft>
+            <HeaderTopics></HeaderTopics>
+                <div className = {style.headerRight}>
+                    <HeaderSearch></HeaderSearch> 
+                    <HeaderCart></HeaderCart>
+                    <HeaderLogin></HeaderLogin>                
+                </div>
         </div>
     );
 }

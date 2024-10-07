@@ -6,10 +6,10 @@ import style from '../styles/header.search.module.css';
 const HeaderSearch = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <div className = {style.search}>
+            <a className = {style.search}>
                 <HiOutlineSearch/>
                 <div className = {style.font}>さがす</div>   
-            </div>
+            </a>
         </IconContext.Provider>
     );
 }

@@ -1,0 +1,14 @@
+.gamesoft:hover{
+    color: brown;
+    transition: 0s;
+}
+
+.gamesoft{
+    color: grey;
+    transition: 0.5s;
+}
+
+.font{
+    font-size: 15px;
+}
+
