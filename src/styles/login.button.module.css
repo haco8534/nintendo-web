@@ -1,0 +1,13 @@
+.Login{
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.font {
+    font-size: 20px
+}
+
+.Login:hover {
+    color: #dc143c;
+}
+

@@ -1,0 +1,13 @@
+.Cart {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.font {
+    font-size: 20px
+}
+
+.Cart:hover {
+    color: #dc143c;
+}
+
