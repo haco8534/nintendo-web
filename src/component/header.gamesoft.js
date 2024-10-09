@@ -6,7 +6,7 @@ import style from '../styles/header.gamesoft.module.css';
 const HeaderGamesoft = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <a href="#" className = {style.gamesoft}> 
+            <a href="#gamesoft" className = {style.gamesoft}> 
                 <FaStar />
                 <div className = {style.font}>ゲームソフト</div>   
             </a>

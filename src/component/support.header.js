@@ -6,7 +6,7 @@ import style from "../styles/support.header.module.css";
 const Support = () => {
     return(
         <IconContext.Provider value = {{size: '50px'}}>
-        <a href="#" className = {style.Support}>
+        <a href="#support" className = {style.Support}>
             <AiFillTool />
             <div className = {style.font}>サポート</div>
         </a>

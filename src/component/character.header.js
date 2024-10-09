@@ -6,7 +6,7 @@ import style from "../styles/character.header.module.css";
 const Character = () => {
     return(
         <IconContext.Provider value = {{size: '50px'}}>
-        <a href="#" className = {style.Character}>
+        <a href="#character" className = {style.Character}>
             <AiFillAliwangwang/>
             <div className = {style.font}>キャラクター</div>
         </a>

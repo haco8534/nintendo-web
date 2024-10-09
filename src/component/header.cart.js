@@ -6,7 +6,7 @@ import style from '../styles/header.cart.module.css';
 const HeaderCart = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <a href="#" className = {style.cart}> 
+            <a href="#shop" className = {style.cart}> 
                 <MdOutlineShoppingCart/>
                 <div className = {style.font}>ストア</div>   
             </a>

@@ -6,7 +6,7 @@ import style from '../styles/header.hontai.module.css';
 const HeaderHontai = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <a href="#" className = {style.hontai}> 
+            <a href="#device" className = {style.hontai}> 
             <MdOutlineGames />
                 <div className = {style.font}>本体・amibo</div>   
             </a>
