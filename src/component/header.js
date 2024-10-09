@@ -8,8 +8,6 @@ import HeaderTopics from "./header.topics.js"
 import Character from "./character.header.js"
 import Support from "./support.header.js"
 
-
-
 const Header = () => {
     return (
         <div className = {style.headerLeft}>
