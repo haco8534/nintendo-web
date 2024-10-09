@@ -1,17 +1,46 @@
+.container{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
 .headerRight{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: absolute;
+    width: 20%;
     top: 0;
     right: 0;
     padding: 20px;
-    gap: 20px;
+    gap: 5vh;
 }
 
 .headerLeft{
     display: flex;
-    gap: 40px;
+    height: 100px;
+    width: 80%;
+    gap: 10%;
     padding-left: 100px;
     padding-top: 20px;
+    overflow: hidden;
+    position: relative;
 }
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    box-shadow: 1px 1px 1px black;
+    position: absolute;
+    background-color: white;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.headerLeftHovered{
+    top: 100px;
+}
+
