@@ -6,7 +6,7 @@ import style from '../styles/header.search.module.css';
 const HeaderSearch = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <a className = {style.search}>
+            <a href="#" className = {style.search}>
                 <HiOutlineSearch/>
                 <div className = {style.font}>さがす</div>   
             </a>

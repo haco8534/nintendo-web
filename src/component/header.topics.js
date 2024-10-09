@@ -6,7 +6,7 @@ import style from '../styles/header.topics.module.css';
 const HeaderTopics = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <a className = {style.topics}> 
+            <a href="#" className = {style.topics}> 
             <CgWebsite />
                 <div className = {style.font}>トピックス</div>   
             </a>

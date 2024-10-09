@@ -6,7 +6,7 @@ import style from '../styles/header.login.module.css';
 const HeaderLogin = () => {
     return (
         <IconContext.Provider value = {{size: '50px'}}>
-            <a className = {style.login}>
+            <a href="#" className = {style.login}>
                 <MdPerson/>
                 <div className = {style.font}>ログイン</div>   
             </a>
