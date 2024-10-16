@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { HiOutlineSearch } from "react-icons/hi";
-import style from '../../../styles/header.search.module.css';
+import style from '../../../styles/header/header.search.module.css';
 
 const HeaderSearch = () => {
     return (

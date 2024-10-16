@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { AiFillTool } from "react-icons/ai";
-import style from "../../../styles/support.header.module.css";
+import style from "../../../styles/header/support.header.module.css";
 
 const Support = () => {
     return(

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { MdOutlineGames } from "react-icons/md";
-import style from '../../../styles/header.hontai.module.css';
+import style from '../../../styles/header/header.hontai.module.css';
 
 const HeaderHontai = () => {
     return (

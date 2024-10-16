@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { MdPerson } from "react-icons/md";
-import style from '../../../styles/header.login.module.css';
+import style from '../../../styles/header/header.login.module.css';
 
 const HeaderLogin = () => {
     return (
