@@ -1,0 +1,42 @@
+.container{
+    height: auto;
+    width: 100%;
+    max-width: 270px;
+    max-height: 240px;
+    overflow: hidden;
+    border-bottom: 2px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    transition: 0.2s ease;
+}
+.container:hover .image{
+    opacity: 0.8;
+}
+
+.title{
+    font-size: 13px;
+    font-weight: bold;
+}
+.date{
+    color: grey;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: auto;
+    position:relative;
+}
+.date:before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: red;
+    top: 13%;
+    left: 92%;
+    position: absolute;
+}
