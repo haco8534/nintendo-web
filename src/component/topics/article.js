@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from '../../styles/topics/article.module.css'
 
-const Article = (props) => {
+const TopicsArticle = (props) => {
     return(
         <div className={Style.container}>
             <img className={Style.image} src={props.image} alt="記事サムネイル"></img>
@@ -11,4 +11,4 @@ const Article = (props) => {
     );
 }
 
-export default Article;
+export default TopicsArticle;

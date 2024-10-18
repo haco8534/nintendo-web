@@ -7,7 +7,7 @@ import Ninchare from "./image/ninchare.jpg";
 import Patric from "./image/patric.jpg";
 import Picmin from "./image/picmin.jpg";
 
-const dataSet = [
+const topicsdataSet = [
     {
         title:"【ニンチャレ最終回】子どもたちの推しゲームを紹介「星のカービィ」編",
         image:Kirby,
@@ -43,4 +43,4 @@ const dataSet = [
 
 ]
 
-export default dataSet;
+export default topicsdataSet;
