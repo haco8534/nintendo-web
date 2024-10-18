@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.slideBar{
+    background: gainsboro;
+    width: 360px;
+    height: 4px;
+    position: relative;
+}
+.slideBar::before{
+    content: "";
+    background: white;
+    width: 2px;
+    height: 4px;
+    top: 0px;
+    left: 50px;
+    position: absolute;
+    z-index: 5;
+}
+.slideBar::after{
+    content: "";
+    background: white;
+    width: 2px;
+    height: 4px;
+    top: 0px;
+    left: 110px;
+    position: absolute;
+    z-index: 6;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 23px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    background: #d16a02;
+    user-select: none;
+    top: 15px;
+    position: absolute;
+}
+.slider::before{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #d16a02;
+    top:-5px;
+    position: absolute;
+}
+
+.pointArrow{
+    width: 0;
+    height: 0;
+    /*三角形の作成*/
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #d16a02;
+    top: 5px;
+    position: absolute;
+}
+.pointArrow::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #d16a02;
+    top: -5px;
+    left: -19px;
+    position: absolute;
+    z-index: 4;
+}
