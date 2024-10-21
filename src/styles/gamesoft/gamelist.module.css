@@ -1,0 +1,16 @@
+.container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.gameList{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+}
+.gamesoft{
+    border: solid black 3px;
+    position: absolute;
+}

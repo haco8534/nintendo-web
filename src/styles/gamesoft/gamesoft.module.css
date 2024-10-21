@@ -1,0 +1,66 @@
+.container{
+    height: auto;
+    width: 270px;
+    min-width: 270px;
+    overflow: hidden;
+    border-bottom: 2px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    z-index: 1;
+}
+.container:hover{
+    cursor: pointer;
+}
+.container:hover .image{
+    opacity: 0.8;
+    scale:1.05;
+}
+.hard{
+    width: 100%;
+    background: white;
+    color: red;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    z-index: 5;
+}
+.title{
+    font-size: 13px;
+    text-align: left;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+.container:hover .title{
+    color: red;
+}
+.age{
+    height: 35px;
+    width: 35px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.studio{
+    color: grey;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: auto;
+    position:relative;
+}
+.studio:before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: red;
+    top: 13%;
+    left: 92%;
+    position: absolute;
+}
