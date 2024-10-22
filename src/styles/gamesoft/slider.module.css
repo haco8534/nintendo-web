@@ -62,7 +62,7 @@
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-bottom: 4px solid #d16a02;
-    top: 5px;
+    top: 6px;
     position: absolute;
 }
 .pointArrow::before{
@@ -70,7 +70,7 @@
     width: 40px;
     height: 4px;
     background: #d16a02;
-    top: -5px;
+    top: -6px;
     left: -19px;
     position: absolute;
     z-index: 4;

@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import Style from "../../styles/gamesoft/slider.module.css"
 
-const Slider = () => {
+const Slider = ( {onChange} ) => {
 
     const [startPlace, setStart] = useState(0); //ドラッグの開始x座標
-    const [movePlace, setMove] = useState(0);   //移動後のx座標
+    const [movePlace, setMove] = useState(-10);   //移動後のx座標
     const [isDragged, setDragged] = useState(false); //ドッラグ状態の有無
     const [sliderLeft, setLeft] = useState(0); //スライダーのleft
     
@@ -29,6 +29,7 @@ const Slider = () => {
             if(sliderPlace <= MAX_SLIDE_LEFT) sliderPlace = MAX_SLIDE_LEFT;
             else if (sliderPlace >= MAX_SLIDE_RIGHT) sliderPlace = MAX_SLIDE_RIGHT;
             setMove(sliderPlace);
+            onChange(sliderPlace);
         }       
     }
     return(

@@ -1,16 +1,60 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+} 
+.gamesoftTitle {
+    display: flex;
+    width: 100%;
+    flex-direction: row; /* 横に配置 */
+    justify-content: space-between; /* 左右に要素を配置 */
+    margin-bottom: 30px;
+    position: relative;
+}
+.gamesoftTitle::before{
+    content: "";
+    width: 9%;
+    border-bottom: 2px solid orange;
+    position: absolute;
+    top: 130%;
+}
+.gamesoftTitle::after{
+    content: "";
+    width: 91.5%;
+    border-bottom: 2px solid gainsboro;
+    position: absolute;
+    top: 130%;
+    left: 9%;
+}
+.beforeTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.afterTitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 5px;
+}
+
 .container{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    position: relative;
 }
 .gameList{
     display: flex;
     flex-direction: row;
     width: 100%;
     overflow: visible;
-    position: relative;
+    position: absolute;
 }
-.gamesoft{
-    border: solid black 3px;
+.slider{
+    top: 350px;
     position: absolute;
 }
