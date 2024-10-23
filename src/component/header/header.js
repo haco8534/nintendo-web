@@ -23,44 +23,46 @@ const Header = () => {
     const [isCharacterHovered, setCharacterHovered] = useState(false);
 
     return (
-        <div className={style.container}>
-            <HomeButton />
-            <div className={style.headerLeft}> 
-                <div                     
-                        onMouseEnter={() => setHontaiHovered(true)}
-                        onMouseLeave={() => setHontaiHovered(false)}
+        <div className={style.header}>
+            <div className={style.container}>
+                <HomeButton />
+                <div className={style.headerLeft}> 
+                    <div                     
+                            onMouseEnter={() => setHontaiHovered(true)}
+                            onMouseLeave={() => setHontaiHovered(false)}
+                        >
+                        <Hontai />
+                    </div>
+                    <div                     
+                            onMouseEnter={() => setGameSoftHovered(true)}
+                            onMouseLeave={() => setGameSoftHovered(false)}
+                        >
+                        <Gamesoft />     
+                    </div>
+                    <div                     
+                            onMouseEnter={() => setTopicsHovered(true)}
+                            onMouseLeave={() => setTopicsHovered(false)}
+                        >
+                        <Topics />
+                    </div>
+                    <div
+                            onMouseEnter={() => setCharacterHovered(true)}
+                            onMouseLeave={() => setCharacterHovered(false)}
+                        >
+                        <Character />
+                    </div>
+                        <Support />
+                </div>
+                <div className={style.headerRight}>
+                    <div                     
+                        onMouseEnter={() => setSearchHovered(true)}
+                        onMouseLeave={() => setSearchHovered(false)}
                     >
-                    <Hontai />
+                        <Search />
+                    </div>
+                    <Cart />
+                    <Login />
                 </div>
-                <div                     
-                        onMouseEnter={() => setGameSoftHovered(true)}
-                        onMouseLeave={() => setGameSoftHovered(false)}
-                    >
-                    <Gamesoft />     
-                </div>
-                <div                     
-                        onMouseEnter={() => setTopicsHovered(true)}
-                        onMouseLeave={() => setTopicsHovered(false)}
-                    >
-                    <Topics />
-                </div>
-                <div
-                        onMouseEnter={() => setCharacterHovered(true)}
-                        onMouseLeave={() => setCharacterHovered(false)}
-                    >
-                    <Character />
-                </div>
-                    <Support />
-            </div>
-            <div className={style.headerRight}>
-                <div                     
-                    onMouseEnter={() => setSearchHovered(true)}
-                    onMouseLeave={() => setSearchHovered(false)}
-                >
-                    <Search />
-                </div>
-                <Cart />
-                <Login />
             </div>
             <div className = {`${style.hontaicontent} ${isHontaiHovered ? style.headerhontaiHovered : ''}`}>
                 <HontaiContent />
@@ -71,7 +73,7 @@ const Header = () => {
             <div className = {`${style.topicscontent} ${isTopicsHovered ? style.headertopicsHovered : ''}`}>
                 <TopicsContent />
             </div>
-            <div className = {`${style.Charactercontent} ${isCharacterHovered ? style.headercharacterHovered : ''}`}>
+            <div className = {`${style.charactercontent} ${isCharacterHovered ? style.headercharacterHovered : ''}`}>
                 <CharacterContent />
             </div>
             <div className={`${style.searchcontent} ${isSearchHovered ? style.headerSearchHovered : ''}`}>
