@@ -1,0 +1,19 @@
+.software{
+    color: gray;
+    transition: color 0.3s ease;
+    display:flex;
+    align-items:center;
+}
+
+.font{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.software:hover{
+    color:lightgrey;
+}
+
+.allow{
+    color: red;
+}
