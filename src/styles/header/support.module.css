@@ -1,0 +1,20 @@
+.Support {
+    color: grey;
+    transition:  0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.font {
+    font-size: 15px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.Support:hover {
+    color: brown;
+    transition: 0s;
+}
+a {
+    text-decoration: none;
+}

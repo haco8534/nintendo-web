@@ -1,0 +1,111 @@
+.container{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.HomeButton{
+    width: auto;
+    height: 75px;
+}
+
+.headerRight{    
+    display: flex;
+    align-items: center;
+    width: 15%;
+    gap: 5vh;
+}
+
+.headerLeft{
+    align-items: center;
+    display: flex;
+    gap: 3%;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0%;
+    padding-left: 5%;
+}
+
+.searchcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    box-shadow: 1px 1px 1px black;
+    background-color: white;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.hontaicontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: white;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.gamesoftcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: white;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.topicscontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: white;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.charactercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: white;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.headerSearchHovered{
+    top: 150px;
+}
+
+.headerhontaiHovered{
+    top: 400px;
+}
+
+.headergamesoftHovered{
+    top: 200px;
+}
+
+.headertopicsHovered{
+    top: 300px;
+}
+
+.headercharacterHovered{
+    top: 500px;
+}

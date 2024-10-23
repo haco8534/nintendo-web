@@ -1,0 +1,21 @@
+.topics:hover{
+    color: brown;
+    transition: 0s;
+}
+
+.topics{
+    color: grey;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.font{
+    font-size: 15px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+}

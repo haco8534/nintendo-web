@@ -1,0 +1,17 @@
+.cart:hover{
+    color: brown;
+    transition: 0s;
+}
+
+.cart{
+    color: grey;
+    transition: 0.5s;
+}
+
+.font{
+    font-size: 15px;
+    white-space: nowrap;
+}
+a {
+    text-decoration: none;
+}
