@@ -11,8 +11,8 @@ const Topics = () => {
                 <div className={Style.afterTitle}>TOPICS</div>
             </div>
             <div className={Style.articleContainer}>
-                {topicsDataSet.map((data) => (
-                    <TopicsArticle image={data.image} title={data.title}></TopicsArticle>
+                {topicsDataSet.map((data,index) => (
+                    <TopicsArticle key={index} image={data.image} title={data.title}></TopicsArticle>
                 ))}
             </div>
             <div className={Style.articleList}>

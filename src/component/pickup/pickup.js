@@ -11,8 +11,8 @@ const PickUp = () => {
                 <div className={Style.afterTitle}>PICKUP</div>
             </div>
             <div className={Style.articleContainer}>
-                {pickUpDataSet.map((data) => (
-                    <PickUpArticle image={data}></PickUpArticle>
+                {pickUpDataSet.map((data,index) => (
+                    <PickUpArticle key={index} image={data}></PickUpArticle>
                 ))}
             </div>
         </div>
