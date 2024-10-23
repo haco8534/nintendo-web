@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { MdOutlineGames } from "react-icons/md";
-import style from '../../../styles/header/header.hontai.module.css';
+import style from '../../../styles/header/hontai.module.css';
 
-const HeaderHontai = () => {
+const Hontai = () => {
     return (
         <IconContext.Provider value = {{size: '30px'}}>
             <a href="#device" className = {style.hontai}> 
@@ -14,4 +14,4 @@ const HeaderHontai = () => {
     );
 }
 
-export default HeaderHontai;
+export default Hontai;

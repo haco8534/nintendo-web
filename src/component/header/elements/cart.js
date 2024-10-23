@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { MdOutlineShoppingCart } from "react-icons/md";
-import style from '../../../styles/header/header.cart.module.css';
+import style from '../../../styles/header/cart.module.css';
 
-const HeaderCart = () => {
+const Cart = () => {
     return (
         <IconContext.Provider value = {{size: '30px'}}>
             <a href="#shop" className = {style.cart}> 
@@ -14,4 +14,4 @@ const HeaderCart = () => {
     );
 }
 
-export default HeaderCart;
+export default Cart;

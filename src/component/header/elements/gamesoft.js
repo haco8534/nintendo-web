@@ -1,9 +1,9 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { FaStar } from "react-icons/fa";
-import style from '../../../styles/header/header.gamesoft.module.css';
+import style from '../../../styles/header/gamesoft.module.css';
 
-const HeaderGamesoft = () => {
+const Gamesoft = () => {
     return (
         <IconContext.Provider value = {{size: '30px'}}>
             <a href="#gamesoft" className = {style.gamesoft}> 
@@ -14,4 +14,4 @@ const HeaderGamesoft = () => {
     );
 }
 
-export default HeaderGamesoft;
+export default Gamesoft;

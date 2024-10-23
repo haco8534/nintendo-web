@@ -1,40 +1,81 @@
-import HeaderSearch from "./elements/header.search.js";
-import HeaderCart from "./elements/header.cart.js";
-import HeaderLogin from "./elements/header.login.js";
+import Search from "./elements/search.js";
+import Cart from "./elements/cart.js";
+import Login from "./elements/login.js";
 import style from "../../styles/header/header.module.css";
-import HeaderHontai from "./elements/header.hontai.js";
-import HeaderGamesoft from "./elements/header.gamesoft.js";
-import HeaderTopics from "./elements/header.topics.js";
-import Character from "./elements/character.header.js";
-import Support from "./elements/support.header.js";
+import Hontai from "./elements/hontai.js";
+import Gamesoft from "./elements/gamesoft.js";
+import Topics from "./elements/topics.js";
+import Character from "./elements/character.js";
+import Support from "./elements/support.js";
 import SearchContent from "./contents/search.content.js";
 import { useState } from "react";
+import HomeButton from "./elements/homebutton.js";
+import HontaiContent from "./contents/hontai.content.js";
+import GameSoftContent from "./contents/gamesoft.content.js";
+import TopicsContent from "./contents/topics.content.js";
+import CharacterContent from "./contents/character.content.js";
 
 const Header = () => {
-    const [isHovered, setHovered] = useState(false);
+    const [isHontaiHovered, setHontaiHovered] = useState(false);
+    const [isGameSoftHovered, setGameSoftHovered] = useState(false);
+    const [isSearchHovered, setSearchHovered] = useState(false);
+    const [isTopicsHovered, setTopicsHovered] = useState(false);
+    const [isCharacterHovered, setCharacterHovered] = useState(false);
 
     return (
         <div className={style.container}>
-            <div>
-                <div 
-                    className={style.headerLeft}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
-                >
-                    <HeaderHontai />
-                    <HeaderGamesoft />
-                    <HeaderTopics />
+            <HomeButton />
+            <div className={style.headerLeft}> 
+                <div                     
+                        onMouseEnter={() => setHontaiHovered(true)}
+                        onMouseLeave={() => setHontaiHovered(false)}
+                    >
+                    <Hontai />
+                </div>
+                <div                     
+                        onMouseEnter={() => setGameSoftHovered(true)}
+                        onMouseLeave={() => setGameSoftHovered(false)}
+                    >
+                    <Gamesoft />     
+                </div>
+                <div                     
+                        onMouseEnter={() => setTopicsHovered(true)}
+                        onMouseLeave={() => setTopicsHovered(false)}
+                    >
+                    <Topics />
+                </div>
+                <div
+                        onMouseEnter={() => setCharacterHovered(true)}
+                        onMouseLeave={() => setCharacterHovered(false)}
+                    >
                     <Character />
+                </div>
                     <Support />
+            </div>
+            <div className={style.headerRight}>
+                <div                     
+                    onMouseEnter={() => setSearchHovered(true)}
+                    onMouseLeave={() => setSearchHovered(false)}
+                >
+                    <Search />
                 </div>
-                <div className={style.headerRight}>
-                    <HeaderSearch />
-                    <HeaderCart />
-                    <HeaderLogin />
-                </div>
-                <div className={`${style.content} ${isHovered ? style.headerLeftHovered : ''}`}>
-                    <SearchContent />
-                </div>
+                <Cart />
+                <Login />
+            </div>
+            <div className = {`${style.hontaicontent} ${isHontaiHovered ? style.headerhontaiHovered : ''}`}>
+                <HontaiContent />
+            </div>
+            <div className = {`${style.gamesoftcontent} ${isGameSoftHovered ? style.headergamesoftHovered : ''}`}>
+                <GameSoftContent />
+            </div>
+            <div className = {`${style.topicscontent} ${isTopicsHovered ? style.headertopicsHovered : ''}`}>
+                <TopicsContent />
+            </div>
+            <div className = {`${style.Charactercontent} ${isCharacterHovered ? style.headercharacterHovered : ''}`}>
+                <CharacterContent />
+            </div>
+            <div className={`${style.searchcontent} ${isSearchHovered ? style.headerSearchHovered : ''}`}>
+                <SearchContent />
             </div>
         </div>
     );

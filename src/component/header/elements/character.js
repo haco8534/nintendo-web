@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { AiFillAliwangwang } from "react-icons/ai";
-import style from "../../../styles/header/character.header.module.css";
+import style from "../../../styles/header/character.module.css";
 
 const Character = () => {
     return(
