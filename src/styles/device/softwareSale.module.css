@@ -3,16 +3,18 @@
     transition: color 0.2s ease, border-color 0.2s ease;
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid lightgrey;
     padding: 1px;
-    width: 270px;
+    width: 200px;
 }
 
 .font{
-    font-size: 20px;
-    padding: 3px;
-    
+    font-size: 15px;
+    padding: 3px; 
+    text-align: right;
 }
+
 
 .sale:hover{
     color: red;

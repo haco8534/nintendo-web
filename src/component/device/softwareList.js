@@ -11,9 +11,10 @@ const Software = () => {
                 <hr className={style.horizontalLine} />
                 <div className={style.software}>
                     <GiConsoleController />
-                    <div className={style.font}>Nintendo Swith
-                        <br></br>
-                        ソフトウェア一覧</div>
+                    <div className={style.text}>
+                        <div className={style.font}>Nintendo Swith</div>
+                        <div className={style.font}>ソフトウェア一覧</div>
+                    </div>
                     <IoIosArrowDroprightCircle size="17px" className={style.allow} />
                 </div>
             </div>
