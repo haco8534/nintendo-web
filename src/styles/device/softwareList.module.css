@@ -6,12 +6,8 @@
     width: 400px;
 }
 
-.text{
-    
-}
-
 .software{
-    color: gray;
+    color: black;
     transition: color 0.3s ease;
     display:flex;
     justify-content: center;
