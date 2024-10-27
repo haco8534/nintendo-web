@@ -1,0 +1,13 @@
+.list{
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.divider {
+    border-left: 1px dashed lightgray;
+    height: 50px;
+    align-self: center;
+    margin-top: 10px;
+}
