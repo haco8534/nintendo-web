@@ -4,11 +4,11 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import style from '../../styles/device/ReleaseSchedule.module.css';
 
 const Release = () => {
-    return(
+    return (
         <IconContext.Provider value={{ size: "15px" }}>
-            <div className = {style.schedule}>
-                <IoIosArrowDroprightCircle className={style.allow}/>
-                <div className = {style.font}>発売スケジュール</div>
+            <div className={style.schedule}>
+                <IoIosArrowDroprightCircle className={style.allow} />
+                <div className={style.font}>発売スケジュール</div>
             </div>
         </IconContext.Provider>
     );

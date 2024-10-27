@@ -3,6 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 400px;
+}
+
+.text{
+    
 }
 
 .software{
@@ -11,14 +16,14 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    cursor: pointer;
 }
 
 .font{
     font-size: 20px;
 }
 
-.software:hover{
+.container:hover .software{
     color:lightgrey;
 }
 
@@ -31,8 +36,11 @@
     border: 0;
     height: 5px;
     background-color: lightgray;
-    transition: background-color 0.3s;
     margin: 10px auto 10px; 
     width: 100%; 
-    
+    transition: background-color 0.3s;
+}
+
+.container:hover .horizontalLine{
+    background-color: red;
 }

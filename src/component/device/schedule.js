@@ -4,7 +4,7 @@ import Sale from './softwareSale';
 import style from '../../styles/device/Schedule.module.css';
 
 const Schedule = () => {
-    return(
+    return (
         <div className={style.Schedule}>
             <Release></Release>
             <Sale></Sale>
