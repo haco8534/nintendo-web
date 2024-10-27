@@ -1,16 +1,12 @@
 import './App.css';
-import Software from './component/device/softwareList';
-import Smartphone from './component/device/smartphonList';
-import Schedule from './component/device/ReleaseSchedule';
-import Sale from './component/device/softwareSale';
+import List from './component/device/list';
+import Schedule from './component/device/schedule';
 
 function App() {
   return (
     <div className = "App">
-      <Software></Software>
-      <Smartphone></Smartphone>
+      <List></List>
       <Schedule></Schedule>
-      <Sale></Sale>
     </div>
   );
 }

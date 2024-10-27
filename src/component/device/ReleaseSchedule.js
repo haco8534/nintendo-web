@@ -3,7 +3,7 @@ import { IconContext } from 'react-icons';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import style from '../../styles/device/ReleaseSchedule.module.css';
 
-const Schedule = () => {
+const Release = () => {
     return(
         <IconContext.Provider value={{ size: "15px" }}>
             <div className = {style.schedule}>
@@ -14,4 +14,4 @@ const Schedule = () => {
     );
 }
 
-export default Schedule;
+export default Release;
