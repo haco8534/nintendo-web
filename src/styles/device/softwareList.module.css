@@ -11,11 +11,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .font{
     font-size: 20px;
-    padding: 10px;
 }
 
 .software:hover{
@@ -33,6 +33,6 @@
     background-color: lightgray;
     transition: background-color 0.3s;
     margin: 10px auto 10px; 
-    width: 140%; 
+    width: 100%; 
     
 }

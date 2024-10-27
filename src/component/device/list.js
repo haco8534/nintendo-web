@@ -4,10 +4,10 @@ import Smartphone from './smartphonList';
 import style from '../../styles/device/list.module.css';
 
 const List = () => {
-    return(
+    return (
         <div className={style.list}>
             <Software></Software>
-        <div className={style.divider}></div>
+            <div className={style.divider}></div>
             <Smartphone></Smartphone>
         </div>
     );
